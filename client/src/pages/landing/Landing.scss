@@ -1,0 +1,41 @@
+@import "../../asset/var.scss";
+@import "../../asset/mixin.scss";
+
+
+
+
+.classnew {
+    opacity: 0.8;
+}
+
+.message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.abc {
+    font-family: $font-stack ;
+}
+
+.info {
+
+    @extend %toolbelt;
+    @include avatar(100px, $circle: true);
+    background-color: $green;
+}
+
+// practice
+
+// Function to generate menu styles for each menu item
+
+
+// Menu styles with different menu items
+.menu {
+    .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include menu-item-style(("1", "2", "3", "4", "About", "Services", "Contact", "Main", "abc", "7", "8", "9,", "10"));
+    }
+}

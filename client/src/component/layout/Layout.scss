@@ -1,0 +1,29 @@
+@import "../../asset/var.scss", "../../asset/mixin.scss";
+
+
+section {
+    header {
+        @include theme() {
+            background-color: theme-get("darkWhiteReverse");
+        }
+
+        .nav-design {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >.navbar-link {
+                width: 100%;
+
+                nav {
+                    a {
+                        @include theme() {
+                            color: theme-get("darkWhite");
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
